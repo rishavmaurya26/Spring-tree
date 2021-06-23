@@ -220,12 +220,12 @@ i{
 }
 @media only screen and  (max-width:500px) {
     .check_in,.check_out{
-            height: 100px;
+            height: 13%;
     }
     form{
         padding: 20px 0px;
         box-sizing:content-box;
-        height: 300px;
+        height: 430px;
     }
     #booking{
         height: max-content;
