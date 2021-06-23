@@ -4,7 +4,7 @@ const hbs=require("hbs")
 const express=require("express")
 const path=require("path")
 const app= express();
-const port=process.env.port || 3000;
+const port = process.env.PORT || 8080;
 const dir=path.dirname(__dirname)
 const pth=path.join(dir,'/Html')
 require("./db/conn")
