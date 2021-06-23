@@ -43,7 +43,6 @@ nextarw.addEventListener("click", () => {
 }
 )
 
-
 function goto() {
     var city = document.querySelector("#browse>section>input").value.toLowerCase()
     console.log(city)
