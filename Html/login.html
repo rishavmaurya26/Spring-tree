@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Libre+Baskerville:ital@1&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/Style.css">
+    <title>Spring Tree</title>
+    <style>
+    .form{
+        height:350px;
+        width:330px;
+        background-color: rgb(168, 173, 173);
+        margin: auto;
+    }
+    form{
+        height:320px;
+        width:300px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        margin:15px auto;
+    }
+    form>div{
+        height:60px;
+        width: 200px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    form>p{
+        height: 20px;
+        display: block;
+        font-weight: 500;
+        font-size: 1.1rem;
+        font-family:monospace;
+        margin:20px auto;
+    }
+    form>div>input{
+        width: 200px;
+        height:25px;
+    }
+    form>button{
+        width:210px;
+        background-image: linear-gradient(rgb(46, 114, 240),rgb(11, 58, 145));
+        color: white;
+        height:35px;
+        margin: 20px auto;
+    }
+    #container{
+        background-image: linear-gradient(rgb(46, 114, 240),rgb(11, 58, 145));
+        /* background-color: ; */
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        {{>login_form}}
+    </div>
+      <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+      <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+      <script src="../js/form.js"></script>
+</body>
+</html>

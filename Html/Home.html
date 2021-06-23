@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Libre+Baskerville:ital@1&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Spring Tree</title>
+</head>
+<body>
+    <div id="container">
+      {{> header}}
+      <div class="cont1">
+        <div class="welcome"  style="height: 50%">
+          <h1>New Place</h1>
+          <h2>No idea</h2>
+          <p >Don't worry we are here <br>to help you</p>
+        </div>
+        <div class="imgslide">
+          <div>
+            <section><img src="../resources/bathroom.jpg" alt=""><label>Hygenic Facilities</label></section>
+            <section><img src="../resources/luxury-rooms.jpg" alt=""><label>Luxourious Rooms</label></section>
+            <section><img src="../resources/dining area.jpg" alt=""><label>Dining area</label></section>
+            <section><img src="../resources/room-service.jpg" alt="room-service"><label>Best Service</label></section>
+          </div>
+        </div>  
+        <div id="browse">
+          <section>Search Hotels</section>
+          <section>Best Places to visit</section>
+           <section style="font-weight: 600;">Enter your city Here</section> 
+            <section style="display: flex; flex-direction: row;"><input type="text" placeholder="Enter city" oninput="goto()">
+            <a id="search_city" href="" style=" color: rgb(248, 232, 232); background-color:crimson;" class="material-icons">search</a></section>
+        </div>
+      </div> 
+      <div id="cont2">
+        <div class="cont2_left">
+          <h1>Incredible India</h1>
+          <hr style="width: 80%;"><hr style="width: 80%px;">
+        <h2>Travel Across the Country<br>
+          and book Hotel At low prices
+        </h2>
+        <p>
+          India is a land of many features from chilling hill Station <br>
+          to rocky mountains, rainforest and deserts. From forts and palaces <br>
+          to modern resorts here is everything you need on a holiday
+        </p>
+        </div>
+        <div class="cont2_right">
+          <section><div class="overlay">Taj Mahal</div><img src="../resources/th.jpg" alt="Taj Mahal"></section>
+            <section><div class="overlay">Fort</div><img src="../resources/th (1).jpg" alt="Fort"></section>
+            <section><div class="overlay">Humayun's Tomb</div><img src="../resources/th(2).jpg" alt="Humayun's Tomb"></section>
+            <section><div class="overlay">khajuraho Temple</div><img src="../resources/th(3).jpg" alt="khajuraho Temple"></section>
+            <section><div class="overlay">Konark Temple</div><img src="../resources/th(4).jpg" alt="Konark Temple"></section>
+            <section><div class="overlay">Shivaji Terminus</div><img src="../resources/th(5).jpg" alt="Shivaji Terminus"></section>
+        </div>
+      </div>
+      <div class="cont3">
+        <h1>Testimonials</h1>
+        <section class="Testimonials">
+          <div>
+            <section>
+              <img src="../resources/men.jpg" alt="">
+            <h2>David Campell</h2>
+            <p>Spring tree provides best offers related to hotel prices, restaurants 
+                It also provide a good guide about different places to visit.PLaces which 
+                are less famous but worth visiting. It also provide a better sequence for where to
+                start and where to end.The hotels are trusted  and all delivers what they promise
+            </p>
+            </section>
+            <section>
+              <img src="../resources/arjun.jpg" alt="">
+              <h2>Arjun Vatsa</h2>
+              <p>
+                Spring tree provides best offers related to hotel prices, restaurants 
+                It also provide a good guide about different places to visit.PLaces which 
+                are less famous but worth visiting. It also provide a better sequence for where to
+                start and where to end.The hotels are trusted  and all delivers what they promise
+              </p>
+            </section>
+            <section>
+              <img src="../resources/women.jpg" alt="">
+              <h2>Shamita Tripathi</h2>
+              <p>
+                Spring tree provides best offers related to hotel prices, restaurants 
+                It also provide a good guide about different places to visit.PLaces which 
+                are less famous but worth visiting.It also provide a better sequence for where to
+                start and where to end.The hotels are trusted  and all delivers what they promise
+              </p>
+            </section>
+          </div>
+        </section>
+        <div>
+          <button id="prevarw" class="material-icons">
+            navigate_before
+            </button>
+            <button id="nxtarw" class="material-icons">
+              navigate_next
+            </button>
+        </div>
+      </div>
+    </div>
+    {{> footer}}
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel" src="../js/index.js"></script>
+  <script src="../js/front-end.js"></script>
+</body>
+</html>

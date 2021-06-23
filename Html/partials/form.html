@@ -1,0 +1,24 @@
+<div class="form">
+  <form name="form" action="/sign_in" onsubmit="return isvalid(this.name)" method="POST">
+    <h2>Sign up</h2>
+    <div>
+    <label for="fname"><span>First name:</span><input type="text" name="fname" required></label>
+  <label for="laname"><span>Last name:</span><input type="text" name="lname" required></label>
+  <label for="contact"><span>Mobile:</span><input type="number" name="contact" required></label>
+  <label for="email"><span>Email:</span><input type="email" name="email"></label>
+  <label for="password"><span>Password:</span><input type="password" name="password" required></label>
+  <label  class="gndr">
+    <span>Gender</span>
+    <div>
+      <label for="male"><input type="radio" name="gender" value="male"><span>Male</span></label>
+    <label for="female"><input type="radio" name="gender" value="female"><span>Female</span></label>
+    <label for="other"><input type="radio" name="gender" value="other"><span>Other</span></label>
+    </div>
+  </label>
+    </div>
+    <div>
+      <a href="/login">Already a member? Login</a>
+        <button type="submit">Sign in</button>
+    </div>     
+</form>
+</div>

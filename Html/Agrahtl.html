@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Libre+Baskerville:ital@1&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/176ebc5f4a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/htl.css">
+    <script src="https://kit.fontawesome.com/176ebc5f4a.js" crossorigin="anonymous"></script>
+    <title>Spring Tree</title>
+</head>
+<body>
+    <div id="container">
+        {{>header}}
+        <div id="room_type">
+            <div class="luxurious">
+                <img src="../resources/luxury-rooms.jpg" alt="">
+                <div>
+                    <p>luxury-rooms</p>
+                    <section>Available:<var>200</var></section>
+                    <section>Price: Rs.<span class="price">5000</span> per day</section>
+                    <div id="book_lux">
+                        <p>book:</p>
+                        <input type="number" min="0" placeholder=0>
+                    </div>
+                </div>
+            </div>
+            <div class="Non-luxurious">
+                <img src="../resources/room-service.jpg" alt="">
+                <div>
+                    <p>Non-luxury-rooms</p>
+                <section>Available:<var>500</var></section>
+                <section>Price: Rs.<span class="price">1500</span> per day</section>
+                <div id="book_nonlux">
+                    <p>book:</p>
+                    <input type="number" min="0"  placeholder=0>
+                </div>
+                </div> 
+            </div>
+            <div class="suites">
+                <img src="../resources/suites.jpg" alt="">
+                <div>
+                    <p>Suites</p>
+                <section>Available:<var>60</var></section>
+                <section>Price: Rs.<span class="price">10000</span> per day</section>
+                <div id="book_suite">
+                    <p>book:</p>
+                    <input type="number" min="0" placeholder=0>
+                </div>
+            </div>
+                </div>
+        </div>
+    <div id="booking">
+        <div class="check">
+            <form onsubmit="return is_valid()">
+                <div class="check_in">
+                    <div for="check_in">check in:</div>
+                <input type="date" name="true" onmousedown="set(this)" >
+                </div>
+                <div class="check_out">
+                    <div for="check_out">check out:</div>
+                <input type="date" name="true" onmousedown="set(this)" >
+                </div>
+                <label for="name">Name:<input id="name" type="text" name="name" required></label>
+                <label for="age">Age:<input id="age" type="number" name="age" min="0" max="120" required></label>
+                <label for="gender">Gender:</label>
+                <div id="radio">
+                 <label for="male"><input type="radio" id="male" name="gender" value="Male" required><span>Male</span></label>
+                <label for="female"><input type="radio" id="female" name="gender" value="Female"><span>Female</span></label>
+                <label for="other"><input type="radio" id="other" name="gender" value="other"><span>Other</span></label>                    
+                </div>
+                    <label for="id">Adhaar no.:<input id="id" type="number"></label>
+                    <button type="submit" id="add" style="width: 70%;">Add member</button>
+            </form>
+        </div>
+        <div id="payment">
+            <h2>Booking Info</h2>
+            <div id="mem_details">
+                <h3>Members</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div id="pricing">
+                <button type="submit" id="proceed_pay" style="width: 70%;">Proceed to pay</button>
+                <span>Total cost: <b>0000</b></span>
+                <div id="payment_methods">
+                    <p>Pay via:</p>
+                    <div><span>UPI</span><p class="upi_img"></p></div>
+                    <div><span>Debit card</span><p class="card_img"></p></div>
+                    <button type="submit" id="pay" style="width: 70%;">pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{{>footer}}
+<script src="../js/booking.js"></script>
+</div>
+</body>
+</html>
