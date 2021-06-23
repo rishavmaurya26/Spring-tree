@@ -31,12 +31,12 @@ html,body{
     width: 100%;
     position: absolute;
     text-align: center;
-    top:10px
+    top:25px
 }
 #bar>span{
     width: 15%;
     text-align: center;
-    background-image: linear-gradient(to right,coral,rgb(245, 74, 11));
+    background-image: linear-gradient(to right,rgba(247, 19, 19, 0.692),rgb(247, 153, 115));
     color: ivory;
     padding: 10px;
     box-sizing: border-box;
@@ -99,6 +99,20 @@ html,body{
 }
 
 @media only screen and (max-width:600px){
+    #welcome>h1{
+        top: 50px;
+        font-size: .9em;
+    }
+    #bar{
+        position:static;
+        width:100%;
+       }
+       #bar>span{
+           width:50%;
+           height:40px;
+           font-size:.6rem ;
+           border-radius: 0px;
+       }
     .htl_column>div,.places_column>div{
     
         flex-direction:column;
